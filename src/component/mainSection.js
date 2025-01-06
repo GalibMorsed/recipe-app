@@ -19,15 +19,24 @@ export default function MainSection() {
         <div className="cart texts">
           <h1 className="title">What Are We About</h1>
           <p className="info">
-            CokingHub is a place where you can please your soul and tummy with
-            delicious food recepies of all cuisine. And our service is
-            absolutley free. So start exploring now.
+            "Welcome to COOKINGHUB - your ultimate destination for exploring,
+            discovering, and creating mouthwatering recipes! Whether you're a
+            seasoned chef or a kitchen novice, This platform has something for
+            everyone. <br />
+            <br />
+            Search for recipes by cuisine, ingredients, or dietary preferences,
+            and discover step-by-step guides to make every meal a masterpiece.
+            From quick weeknight dinners to elaborate gourmet creations,
+            COOKINGHUB is here to inspire your culinary journey. <br />
+            <br />
+            Start exploring today and turn your kitchen into a hub of delicious
+            possibilities!"
           </p>
           <button className="btn">Explore now</button>
         </div>
         <div className="cart images">
           {iamegs.map((src, index) => (
-            <Customimgs key={index} imgsrc={src} pt={"85%"} />
+            <Customimgs key={index} imgsrc={src} pt={"75%"} />
           ))}
         </div>
       </div>

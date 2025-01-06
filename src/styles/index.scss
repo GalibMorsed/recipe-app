@@ -24,6 +24,7 @@ img {
 body {
   font-size: var(--font-size);
   font-family: "Roboto", sans-serif;
+  padding-top: 55px;
 }
 a {
   text-decoration: none;
@@ -31,7 +32,7 @@ a {
 @import "_navbar.scss";
 
 .container {
-  padding-inline: 10vw;
+  padding-inline: 13vw;
 }
 .main {
   padding-top: 3vw;
@@ -39,6 +40,7 @@ a {
 
 .section {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 3vw;
   .title {
@@ -65,7 +67,7 @@ a {
   .images {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2vw;
+    gap: 1.5vw;
     .custom-img {
       border-radius: 3px;
       overflow: hidden;
@@ -188,6 +190,95 @@ a {
     }
   }
 }
+.section4 {
+  display: block;
+  margin-top: 3em;
+}
+
+.top-chefs-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-gap: 1.5em;
+  margin-top: 2em;
+}
+.chef-cards {
+  display: flex;
+  height: 120px;
+  background-color: var(--background-light);
+  border-radius: 5px;
+  overflow: hidden;
+  img {
+    height: 100%;
+    width: 120px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px var(--shadow-color);
+  }
+  .chef-card-info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0.5em;
+    padding-left: 1em;
+    .chef-card-name {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: var(--text-color);
+    }
+    .chef-recipe-count,
+    .chef-cuisine {
+      font-size: 1em;
+      color: var(--text-light);
+    }
+    .chef-icons {
+      font-size: 1.2em;
+      svg {
+        margin-right: 0.5em;
+        &:nth-child(1) {
+          color: #0063f7;
+        }
+        &:nth-child(2) {
+          color: black;
+        }
+        &:nth-child(3) {
+          color: #ff0056;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background-color: #0f0f0f;
+  color: #fff;
+  padding: 3em 1em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 1.5em;
+  justify-content: center;
+  align-items: start;
+
+  .footer-section {
+    padding: 0 1em;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 250px;
+
+    p {
+      opacity: 0.9;
+      margin-bottom: 0.5em;
+      line-height: 1.5;
+    }
+
+    p.title {
+      opacity: 1;
+      font-size: 1.2em;
+      font-weight: bold;
+      margin-bottom: 1em;
+      text-transform: uppercase;
+    }
+  }
+}
 
 .custom-img {
   background-color: rgb(163, 132, 132);
@@ -221,6 +312,16 @@ a {
 }
 
 @import "_animation.scss";
+@media screen and (max-width: 1280px) {
+  .container {
+    padding-inline: 18vw;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .container {
+    padding-inline: 12vw;
+  }
+}
 @media screen and (max-width: 768px) {
   .navbar {
     .nav-links {
@@ -229,5 +330,29 @@ a {
     .sidebar-btn {
       display: block;
     }
+  }
+  .section {
+    .cart {
+      width: 100%;
+      padding: 0 !important;
+      text-align: center;
+      margin-bottom: 2em;
+    }
+  }
+  .items {
+    display: inline-block;
+    margin: 1em;
+  }
+  .chef-cards {
+    box-shadow: 0 5px 10px var(--shadow-color);
+  }
+  .container {
+    padding-inline: 5vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding-inline: 3vw;
   }
 }

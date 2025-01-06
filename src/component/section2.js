@@ -8,7 +8,7 @@ export default function Section2() {
     "Get ranked in the leaderboard",
   ];
   return (
-    <div className="section2">
+    <div className="section2 section">
       <div className="cart img">
         <img src="/images/foodsimg/img11.avif" alt="" />
       </div>

@@ -29,7 +29,7 @@ export default function Navbar() {
     <>
       <div className="navbar  container">
         <a href="#!" className="logo">
-          C<span>oo</span>kingsHub
+          C<span>oo</span>kingHub
         </a>
         <div className="nav-links">
           {links.map((link) => (

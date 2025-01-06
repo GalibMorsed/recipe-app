@@ -1,11 +1,15 @@
 .navbar {
-  height: 55px;
+  height: 60px;
   box-shadow: 0 3px 6px var(--shadow-color);
   background-color: var(--background-color);
   color: var(text-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 998;
   .logo {
     font-size: 1.5rem;
     font-weight: bolder;
@@ -95,6 +99,7 @@
   left: 0;
   height: 100vh;
   width: 260px;
+  z-index: 999;
   background-color: var(--background-color);
   box-shadow: 0 0 0 1300px rgba(0, 0, 0, 0.2), 3px 0 5px var(--shadow-color);
   animation: froAnimationDuration(0.3s) slideInLeft;
