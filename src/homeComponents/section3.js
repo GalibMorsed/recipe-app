@@ -15,7 +15,7 @@ const allRecipes = {
     {
       id: 3,
       image: "images/foodsimg/img10.avif",
-      title: "Frout Salad",
+      title: "Fruit Salad",
     },
     {
       id: 4,
