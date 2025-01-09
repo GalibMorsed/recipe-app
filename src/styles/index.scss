@@ -30,7 +30,6 @@ a {
   text-decoration: none;
 }
 @import "_navbar.scss";
-
 .container {
   padding-inline: 13vw;
 }
@@ -280,6 +279,8 @@ a {
   }
 }
 
+@import "recipes.scss";
+
 .custom-img {
   background-color: rgb(163, 132, 132);
   height: 0;
@@ -310,7 +311,6 @@ a {
     box-shadow: 0 1px 3px var(--shadow-color);
   }
 }
-
 @import "_animation.scss";
 @media screen and (max-width: 1280px) {
   .container {
