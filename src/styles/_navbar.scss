@@ -1,7 +1,7 @@
 .navbar {
   height: 60px;
-  box-shadow: 0 3px 6px var(--shadow-color);
-  background-color: var(--background-color);
+  box-shadow: 0 3px var(--shadow-color);
+  background-color: rgb(21, 21, 21);
   color: var(text-color);
   display: flex;
   justify-content: space-between;
@@ -13,7 +13,7 @@
   .logo {
     font-size: 1.5rem;
     font-weight: bolder;
-    color: var(--text-color);
+    color: white;
     text-shadow: 0 1px 3px var(--shadow-color);
     span {
       color: var(--primary-color);
@@ -24,7 +24,7 @@
 .nav-links {
   a {
     margin-left: 1rem;
-    color: var(--text-light);
+    color: white;
     letter-spacing: 2px;
     text-transform: uppercase;
     position: relative;
@@ -61,7 +61,7 @@
     border-radius: 5px;
     height: 5px;
     width: 35px;
-    background-color: var(--text-color);
+    background-color: white;
     position: absolute;
     transition: froAnimationDuration(0.5s) ease-in-out;
     &:nth-child(1) {

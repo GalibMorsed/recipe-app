@@ -19,7 +19,7 @@ export default function Section2() {
             {item}
           </p>
         ))}
-        <button className="btn">signup now</button>
+        <button className="btn">SIGNUP NOW</button>
       </div>
     </div>
   );

@@ -12,7 +12,7 @@ export default function MainSection() {
     "images/foodsimg/img_7.jpg",
     "images/foodsimg/img_8.jpg",
     "images/foodsimg/img_9.jpg",
-  ];
+  ].sort(() => Math.random() - 0.5);
   return (
     <>
       <div className="section main">
@@ -32,7 +32,7 @@ export default function MainSection() {
             Start exploring today and turn your kitchen into a hub of delicious
             possibilities!"
           </p>
-          <button className="btn">Explore now</button>
+          <button className="btn">EXPLORE NOW</button>
         </div>
         <div className="cart images">
           {iamegs.map((src, index) => (

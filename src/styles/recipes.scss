@@ -74,6 +74,9 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5em;
   padding: 1em;
+  .no-recipes {
+    color: var(--text-color);
+  }
 }
 
 .recipe-cart {
@@ -95,12 +98,12 @@ img {
     font-size: 1.25em;
     font-weight: bold;
     margin-bottom: 0.5em;
-    color: var(--text-color);
+    color: black;
     margin-top: 0.25em;
   }
 
   .recipe-desc {
-    color: var(--text-light);
+    color: rgb(77, 77, 77);
     font-size: 0.9em;
     letter-spacing: 1px;
     line-height: 1.5;

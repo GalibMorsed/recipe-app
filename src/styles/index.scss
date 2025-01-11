@@ -25,6 +25,7 @@ body {
   font-size: var(--font-size);
   font-family: "Roboto", sans-serif;
   padding-top: 55px;
+  background-color: var(--background-light);
 }
 a {
   text-decoration: none;
@@ -42,6 +43,9 @@ a {
   flex-wrap: wrap;
   align-items: center;
   margin-bottom: 3vw;
+  &.d-block {
+    display: block;
+  }
   .title {
     color: var(--text-color);
     font-size: 2em;
@@ -127,7 +131,7 @@ a {
         }
       }
       .btn {
-        margin-top: 0.75em;
+        margin-top: 0.1em;
       }
     }
   }
@@ -203,7 +207,7 @@ a {
 .chef-cards {
   display: flex;
   height: 120px;
-  background-color: var(--background-light);
+  background-color: var(--background-color);
   border-radius: 5px;
   overflow: hidden;
   img {
@@ -263,6 +267,13 @@ a {
     margin: 0 auto;
     max-width: 250px;
 
+    a {
+      color: white;
+      display: block;
+      opacity: 0.9;
+      margin-bottom: 0.5em;
+      line-height: 1.5;
+    }
     p {
       opacity: 0.9;
       margin-bottom: 0.5em;
@@ -280,6 +291,7 @@ a {
 }
 
 @import "recipes.scss";
+@import "settings.scss";
 
 .custom-img {
   background-color: rgb(163, 132, 132);

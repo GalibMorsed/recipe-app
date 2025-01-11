@@ -18,9 +18,14 @@ export default function Footer() {
       </div>
       <div className="footer-section">
         <p className="title">Socials</p>
-        <p>Facebook</p>
-        <p>Twitter or X</p>
-        <p>Instagram</p>
+        <a href="https://www.facebook.com/profile.php?id=100073369854960">
+          Facebook
+        </a>
+        <a href="https://www.linkedin.com/in/galib-morsed-513874281/?fbclid=PAZXh0bgNhZW0CMTEAAaZKipqgA4eISlidDuI4vPvEcf2vo3ILFO98e6x43GonZ6cBzBerrPTELSY_aem_gtC6ovhWuYt8jlqkXnp19Q">
+          Linkdin
+        </a>
+        <a href="">Twitter or X</a>
+        <a href="https://www.instagram.com/galib_morsed/">Instagram</a>
       </div>
     </div>
   );

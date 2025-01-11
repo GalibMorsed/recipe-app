@@ -38,7 +38,7 @@ export default function Section4() {
       cuisine: "Italian",
       img: "/images/chefsimg/chef6.jpg",
     },
-  ];
+  ].sort(() => Math.random() - 0.5);
   return (
     <div className="section4 section">
       <h1 className="title">Worlds Top Chefs</h1>

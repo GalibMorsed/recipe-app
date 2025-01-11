@@ -50,7 +50,7 @@ export default function Section1({ updateRecipes }) {
   return (
     <div>
       <div className="previous-search section">
-        <h2>Most Searched Items</h2>
+        <h2>What’s on your mind? Search recipes by keyword!</h2>
         <div className="previous-search-container">
           {searches.map((search, index) => (
             <div

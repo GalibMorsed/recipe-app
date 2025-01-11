@@ -15,7 +15,8 @@ export default function Recipes() {
           ))
         ) : (
           <div className="no-recipes">
-            No recipes found. Try to search for something you wishes.
+            No recipes found. <br /> Looking for something specific? Search
+            recipes here....
           </div>
         )}
       </div>
