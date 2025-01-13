@@ -20,7 +20,7 @@ const allRecipes = {
     {
       id: 4,
       image: "images/foodsimg/img13.jpg",
-      title: "Spaghetti Aglio Olio e Peperoncino.",
+      title: "Spaghetti Peperoncino.",
     },
   ],
   "Quick + Easy": [
@@ -78,6 +78,7 @@ const RecipeGrid = () => {
 
   return (
     <div className="section3">
+      <h1 className="title">Categories</h1>
       <div className="tabs">
         {Object.keys(allRecipes).map((tab) => (
           <button

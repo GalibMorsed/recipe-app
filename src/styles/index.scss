@@ -63,6 +63,7 @@ a {
   }
 }
 
+@import "first_section.scss";
 .section.main {
   .texts {
     padding-right: 1em;
@@ -140,6 +141,11 @@ a {
 .section3 {
   padding: 20px;
   text-align: center;
+  .title {
+    color: var(--text-color);
+    font-size: 2em;
+    margin-bottom: 0.45em;
+  }
 
   .tabs {
     display: flex;

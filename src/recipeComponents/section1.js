@@ -45,6 +45,13 @@ export default function Section1({ updateRecipes }) {
     "cake",
     "ice cream",
     "sandwich",
+    "pancakes",
+    "bread",
+    "spaghetti",
+    "cottage pie",
+    "cookies",
+    "tacos",
+    "dessert",
   ];
 
   return (
