@@ -33,6 +33,9 @@ export default function Navbar() {
         <Link to="/" className="logo">
           C<span>oo</span>kingHub
         </Link>
+        <Link to="/logPage" className="logo">
+          L<span>o</span>g In
+        </Link>
         <div className="nav-links">
           {links.map((link) => (
             <Link

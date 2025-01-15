@@ -2,6 +2,7 @@ import React from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
+import LogPage from "./navPages/logPage";
 import Navbar from "./homeComponents/navbar";
 import Home from "./navPages/home";
 import Footer from "./homeComponents/footer";
@@ -14,6 +15,7 @@ function App() {
       <Navbar />
       <div className="container main">
         <Routes>
+          <Route path="/logPage" element={<LogPage />} />
           <Route path="/" element={<Home />} />
           <Route path="/recipes" element={<Recipes />} />
           <Route path="/settings" element={<Settings />} />

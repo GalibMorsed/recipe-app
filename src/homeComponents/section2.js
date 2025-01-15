@@ -1,3 +1,5 @@
+import { Link, useLocation } from "react-router-dom";
+
 export default function Section2() {
   const list = [
     "Learn new recipes",
@@ -19,7 +21,11 @@ export default function Section2() {
             {item}
           </p>
         ))}
-        <button className="btn">SIGNUP NOW</button>
+        <div className="butn">
+          <Link to="/logPage" className="btn">
+            SIGNUP NOW
+          </Link>
+        </div>
       </div>
     </div>
   );

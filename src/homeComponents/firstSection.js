@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, useLocation } from "react-router-dom";
 
 const FirstSection = () => {
   return (
@@ -11,9 +12,9 @@ const FirstSection = () => {
           Appropriately integrate technically sound value with scalable
           infomediaries to negotiate sustainable strategic theme areas.
         </p>
-        <a href="#" className="btn">
+        <Link to="/logPage" className="btn">
           SignUp Today
-        </a>
+        </Link>
       </div>
       <div className="first-image"></div>
     </div>

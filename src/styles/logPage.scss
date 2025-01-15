@@ -1,0 +1,118 @@
+.login-container {
+  margin: 0 auto;
+  height: auto;
+  background-color: #ffffff61;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+
+  h2 {
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 1.5rem;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+
+  .btn[type="button"] {
+    cursor: pointer;
+    display: inline-grid;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: #ffffff;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+
+  p {
+    margin-top: 20px;
+  }
+
+  #signInMessage {
+    color: red;
+    margin-top: 15px;
+    height: 10px;
+  }
+}
+
+.whole-screen {
+  font-size: var(--font-size);
+  font-family: "Roboto", sans-serif;
+  padding-top: 50px;
+  padding-left: 0;
+  background-color: var(--background-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)),
+    url("../../public/images/log_page.jpg") center/cover no-repeat;
+}
+
+@media (min-width: 768px) {
+  .login-container {
+    padding: 30px;
+    width: 70%;
+    max-width: 400px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .whole-screen {
+    padding-right: 15em;
+  }
+  .login-container {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .whole-screen {
+    padding-left: 30em;
+  }
+
+  .login-container {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 480px) {
+  .whole-screen {
+    padding-top: 30px;
+  }
+
+  .login-container {
+    padding: 15px;
+  }
+
+  .login-container h2 {
+    font-size: 18px;
+  }
+
+  .login-container input[type="text"],
+  .login-container input[type="password"] {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  .btn[type="button"] {
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+}

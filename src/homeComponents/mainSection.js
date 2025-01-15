@@ -1,5 +1,6 @@
 import React from "react";
 import Customimgs from "./CustomImgs";
+import { Link, useLocation } from "react-router-dom";
 
 export default function MainSection() {
   const iamegs = [
@@ -32,7 +33,9 @@ export default function MainSection() {
             Start exploring today and turn your kitchen into a hub of delicious
             possibilities!"
           </p>
-          <button className="btn">EXPLORE NOW</button>
+          <Link to="/recipes" className="btn">
+            EXPLORE NOW
+          </Link>
         </div>
         <div className="cart images">
           {iamegs.map((src, index) => (
